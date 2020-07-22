@@ -1,9 +1,17 @@
-body{
+body {
     margin: 0;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .btn-round-light {
     cursor: pointer;
+    display: inline-block;
+
     text-align: center;
+    text-decoration: none;
     border: 1px solid rgb(176, 176, 176);
     background-color: rgb(255, 255, 255);
     outline: currentcolor none medium;
@@ -27,9 +35,8 @@ body{
     border-color: rgb(34, 34, 34);
 }
 
-.menuItemButton {
+#menuItemBtn {
     padding-right: 8px;
-    display: inline-block;
 }
 
 .submenu {

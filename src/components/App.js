@@ -7,11 +7,9 @@ function App() {
     <div>
       <h1>Hello World!</h1>
       <div className="submenu">
+      <ButtonRoundMenuItem text='A gomb szövege' href='#'/>
       <ButtonRoundMenuItem text='A gomb szövege'/>
       <ButtonRoundMenuItem text='A gomb szövege'/>
-      <ButtonRoundMenuItem text='A gomb szövege'/>
-      <ButtonRoundMenuItem text='A gomb szövege'/>
-
       </div>
 
     </div>

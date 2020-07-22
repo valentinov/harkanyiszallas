@@ -2,24 +2,19 @@ import React from 'react';
 
 function ButtonRound(props) {
     return (
-        <button
-            className="btn-round-light"
-            type="button"
-            aria-invalid="false"
-            aria-pressed="false"
-        >
+        <a className="btn-round-light" role="button" href={props.href}>
             <span className="btn-round-text">
                 {props.text}
             </span>
-        </button>
+        </a>
     );
 }
 
 function ButtonRoundMenuItem(props) {
     return (
-        <div className="menuItemButton">
+        <div id="menuItemBtn">
 
-            <ButtonRound text={props.text} />
+            <ButtonRound text={props.text} href={props.href} />
 
         </div>
 
