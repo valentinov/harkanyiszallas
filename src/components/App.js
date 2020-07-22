@@ -1,15 +1,14 @@
 import React from 'react';
 import Button from './Button';
-import { ButtonRoundMenuItem } from './Button';
+import { MenuItemBtnRound } from './Button';
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
       <div className="submenu">
-      <ButtonRoundMenuItem text='A gomb szövege' href='#'/>
-      <ButtonRoundMenuItem text='A gomb szövege'/>
-      <ButtonRoundMenuItem text='A gomb szövege'/>
+      <MenuItemBtnRound text='Csoportoknak' href='#'/>
+      <MenuItemBtnRound text='Családbarát'/>
+      <MenuItemBtnRound text='Állatbarát'/>
       </div>
 
     </div>

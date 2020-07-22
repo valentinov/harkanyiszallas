@@ -25,6 +25,11 @@ body {
     line-height: 16px;
 }
 
+#btn-green{
+    background-color: #16A085 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
 .btn-round-text {
     font-weight: 400;
     font-size: 14px;
@@ -46,4 +51,5 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: center;
+    position: sticky;
 }

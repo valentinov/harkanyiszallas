@@ -10,7 +10,7 @@ function ButtonRound(props) {
     );
 }
 
-function ButtonRoundMenuItem(props) {
+function MenuItemBtnRound(props) {
     return (
         <div id="menuItemBtn">
 
@@ -22,4 +22,4 @@ function ButtonRoundMenuItem(props) {
 }
 
 export default ButtonRound;
-export { ButtonRoundMenuItem };
+export { MenuItemBtnRound };
