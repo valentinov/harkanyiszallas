@@ -12,6 +12,9 @@ a:hover {
     text-decoration: none;
 }
 
+/* Nav */
+
+
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/12733.jpg');
@@ -107,6 +110,7 @@ a:hover {
 }
 
 .left-right-5{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 10px;
 }

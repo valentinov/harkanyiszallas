@@ -4,7 +4,8 @@ import { MenuItemBtnRound } from './Button';
 import HeroImg from './Hero';
 import subMenu from '../subMenu';
 import Card from './Card';
-import Attraction from '../attractions';
+import attractions from '../attractions';
+import Menu from './Menu';
 
 function CreateSubMenu(i) {
   return (<MenuItemBtnRound text={i.name} href={i.href} />);
@@ -13,6 +14,7 @@ function CreateSubMenu(i) {
 function App() {
   return (
     <div>
+    <Menu/>
       <HeroImg />
 
       <div className="submenu">
@@ -20,7 +22,7 @@ function App() {
       </div>
       <div class="row three-card-section">
 
-        {Attraction.map(e => (<Card key={e.key} title={e.title} content={e.content} />))}
+        {attractions.map(e => (<Card key={e.key} title={e.title} content={e.content} />))}
 
       </div>
 
