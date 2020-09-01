@@ -1,0 +1,30 @@
+.hero{
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/12733.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__text{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding-top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    max-width: 350px;
+}
+
+.hero__text > h5{
+    margin-top: 10px;
+}
+
+.hero__text > button{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}

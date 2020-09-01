@@ -1,32 +1,26 @@
 import React from 'react';
-import Button from './Button';
-import { MenuItemBtnRound } from './Button';
-import HeroImg from './Hero';
-import subMenu from '../subMenu';
-import Card from './Card';
-import attractions from '../attractions';
-import Menu from './Menu';
-
-function CreateSubMenu(i) {
-  return (<MenuItemBtnRound text={i.name} href={i.href} />);
-}
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from './Header';
+import Home from './Home';
+import RegisterPage from './RegisterPage';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div>
-    <Menu/>
-      <HeroImg />
+    <Router>
 
-      <div className="submenu">
-        {subMenu.map(CreateSubMenu)}
-      </div>
-      <div class="row three-card-section">
+      <Header />
+      <Switch>
+      <Route path='/register'>
+          <RegisterPage />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+      <Footer />
 
-        {attractions.map(e => (<Card key={e.key} title={e.title} content={e.content} />))}
-
-      </div>
-
-    </div>
+    </Router>
   );
 }
 

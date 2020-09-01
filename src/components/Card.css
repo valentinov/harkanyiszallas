@@ -1,0 +1,26 @@
+.card{
+    margin: 10px;
+    border: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card > img{
+    border-radius: 10px;
+    object-fit: fill;
+    min-width: 300px;
+    min-height: 200px;
+    width: 100%;
+}
+
+.card__content{
+    padding: 20px 20px 20px 0;
+}
+
+.card__content > h2{
+    font-size: 18px;
+}
+
+.card__content > h3{
+    font-size: 14px;
+}

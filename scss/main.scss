@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Variables
+
+$radius16 : 1rem;
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: $radius16;
+    border-top-right-radius: $radius16;
+}

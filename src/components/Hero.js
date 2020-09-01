@@ -1,12 +1,16 @@
 import React from 'react';
+import './Hero.css';
+import { Button } from '@material-ui/core';
+import ChevronRightSharpIcon from '@material-ui/icons/ChevronRightSharp';
 
-function HeroImg(){
-    return (<div class="hero-image">
-    <div class="hero-text">
+const HeroImg = () => {
+  return (<div className="hero">
+    <div className="hero__text">
       <h1>Harkányi Utazás</h1>
-      <p>Kikapcsol, feltölt, pihentet</p>
+      <h5>Kikapcsol, feltölt, pihentet</h5>
+      <Button endIcon={<ChevronRightSharpIcon/>}>Fedezze fel</Button>
     </div>
-  </div> );
+  </div>);
 }
 
 export default HeroImg;

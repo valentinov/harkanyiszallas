@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ButtonRound(props) {
+const ButtonRound = (props) => {
     return (
         <a className="btn-round-light" role="button" href={props.href}>
             <span className="btn-round-text">
@@ -10,7 +10,7 @@ function ButtonRound(props) {
     );
 }
 
-function MenuItemBtnRound(props) {
+const MenuItemBtnRound = (props) => {
     return (
         <div id="menuItemBtn">
 

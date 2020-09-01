@@ -1,15 +1,21 @@
-body {
+/* body {
     padding: 0;
     margin: 0;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
+} */
 
 a:hover {
     color: rgb(34, 34, 34);
     text-decoration: none;
+}
+
+.home__section{
+    display: flex;
+    margin: 0 80px;
+    padding: 30px 80px;
 }
 
 /* Nav */
@@ -93,12 +99,6 @@ a:hover {
 
 .card-custom{
     border-radius: 16px !important;
-}
-
-.card-img-top {
-    width: 100%;
-    border-top-left-radius: 16px !important;
-    border-top-right-radius: 16px !important;
 }
 
 .three-card-section{
