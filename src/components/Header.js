@@ -22,6 +22,7 @@ const Header = () => {
             <div className="header__right">
                 <LanguageIcon />
                 <ExpandMoreIcon />
+
                 <a href="/register" className="registerLink">Regisztráljon most!</a>
 
 
