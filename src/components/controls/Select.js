@@ -17,7 +17,7 @@ const Select = (props) => {
                 <MenuItem value=""><em>None</em></MenuItem>
                 {
                     options.map(
-                        item => (<MenuItem key={item.id} value={item.title}>{item.title}</MenuItem>)
+                        item => (<MenuItem key={item.id} value={item.id}>{item.title}</MenuItem>)
                     )
                 }
             </MuiSelect>

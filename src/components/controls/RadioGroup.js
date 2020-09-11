@@ -14,7 +14,7 @@ const RadioGroup = (props) => {
                 onChange={onChange}>
                 {
                     items.map(
-                        item => (<FormControlLabel value={item.id} control={<Radio />} label={item.title} />)
+                        item => (<FormControlLabel key={item.id} value={item.id} control={<Radio />} label={item.title} />)
                     )
                 }
             </MuiRadioGroup>

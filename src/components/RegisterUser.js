@@ -24,7 +24,9 @@ const initialRegisterValues = {
   email: '',
   gender: 'male',
   testId: '',
-  registerDate: new Date()
+  vendegSzam: '',
+  registerDate: new Date(),
+  ceckboxTest: false,
 };
 
 
@@ -45,28 +47,50 @@ const RegisterUser = () => {
 
   return (
     <form className={classes.root}>
-      <Grid item xs={6}>
-        <Controls.Input name="lastName" label="Vezetéknév" value={values.lastName} onChange={handleInputChange} />
-        <Controls.Input name="firstName" label="Kersztnév" value={values.firstName} onChange={handleInputChange} />
-      </Grid>
-      <Grid item xs={6}>
-        <Controls.RadioGroup
-          name="gender"
-          label="Gender"
-          value={values.gender}
-          onChange={handleInputChange}
-          items={genderItems} />
 
-        <Controls.Select
+      <Grid container>
+        <Grid item xs={6}>
+          <Controls.Input name="lastName" label="Vezetéknév" value={values.lastName} onChange={handleInputChange} />
+          <Controls.Input name="firstName" label="Kersztnév" value={values.firstName} onChange={handleInputChange} />
+        </Grid>
+        <Grid item xs={6}>
+          <Controls.RadioGroup
+            name="gender"
+            label="Gender"
+            value={values.gender}
+            onChange={handleInputChange}
+            items={genderItems} />
 
-          name="test"
-          label="test"
-          value={values.testId}
-          onChange={handleInputChange}
-          options={testServices.getTestCollection()}
+          <Controls.Select
 
-        />
+            name="testId"
+            label="Szállás típusa"
+            value={values.testId}
+            onChange={handleInputChange}
+            options={testServices.getTestCollection()}
 
+          />
+
+
+          <Controls.Select
+
+            name="vendegSzam"
+            label="Vendég"
+            value={values.vendegSzam}
+            onChange={handleInputChange}
+            options={testServices.getVendegCollection()}
+
+          />
+
+          <Controls.Checkbox
+            name="ceckboxTest"
+            label="Checkbox Teszt"
+            onChange={handleInputChange}
+            value={values.ceckboxTest}
+          />
+
+
+        </Grid>
       </Grid>
     </form>);
 }
